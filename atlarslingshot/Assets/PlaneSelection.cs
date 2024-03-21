@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class PlaneSelection : MonoBehaviour
 {
     ARRaycastManager raycastManager;
-    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Start()
     {
@@ -19,9 +19,9 @@ public class PlaneSelection : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
-            if (raycastManager.Raycast(ray, hits, TrackableType.PlaneWithinPolygon))
+            if (raycastManager.Raycast(ray, hits, TrackableType.Planes))
             {
-                // this wiill select the first detected plane
+                // this will select the first detected plane
                 ARPlane plane = hits[0].trackable as ARPlane;
                 
                 // this will perform actions on the selected plane
