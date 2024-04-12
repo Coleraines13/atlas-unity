@@ -2,6 +2,11 @@
 AR Slingshot Game & AR Unity Business Card
 
 
+About me the Developer
+
+My name is Cole Raines and i am a software developer with a specification in Ar/Vr and these projects are two of first projects doing Ar i think they went well and i  had a good time making them this Readme dives into concise details on how to do this yourself i hope you enjoy!
+
+
 AR Slingshot Game
 
 Prerequisites
@@ -61,5 +66,7 @@ Test the AR business card on supported devices.
 Additional Notes
 
 Ensure to optimize your AR experiences for performance on mobile devices.
+
 Test your projects on multiple devices to ensure compatibility.
+
 Experiment with additional features like animations, sound effects, and UI enhancements to improve user experience
