@@ -5,13 +5,9 @@ using System.Collections.Generic;
 
 public class PlaneSelection : MonoBehaviour
 {
+    [SerializeField]
     ARRaycastManager raycastManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
-
-    void Start()
-    {
-        raycastManager = GetComponent<ARRaycastManager>();
-    }
 
     void Update()
     {
@@ -32,7 +28,7 @@ public class PlaneSelection : MonoBehaviour
 
     void HandlePlaneSelection(ARPlane plane)
     {
-        // Perform actions when a plane is selected
+        // this performs actions when a plane is selected
         Debug.Log("Plane selected: " + plane.gameObject.name);
     }
 }
