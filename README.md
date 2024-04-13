@@ -16,24 +16,23 @@ Unity3D installed on your system.
 Vuforia Developer Account.
 
 Basic knowledge of Unity3D and C#
-.
-Instructions
 
-Open Unity3D and create a new project.
 
-Import the Vuforia package into your project.
+1. Open Unity3D and create a new project.
 
-Set up Vuforia by adding a license key from your Vuforia Developer Account.
+2. Import the Vuforia package into your project.
 
-Import or create 3D models for the slingshot, targets, and environment.
+3. Set up Vuforia by adding a license key from your Vuforia Developer Account.
 
-Add physics components to the slingshot and targets.
+4. Import or create 3D models for the slingshot, targets, and environment.
 
-Implement slingshot mechanics using Unity's physics system.
+5. Add physics components to the slingshot and targets.
 
-Integrate Vuforia's image target tracking to place the game in the real world.
+6. Implement slingshot mechanics using Unity's physics system.
 
-Test the game on supported devices.
+7. Integrate Vuforia's image target tracking to place the game in the real world.
+
+8. Test the game on supported devices.
 
 AR Unity Business Card
 
@@ -47,21 +46,19 @@ Basic knowledge of Unity3D and C#.
 
 A design for your business card.
 
-Instructions
+1. Open Unity3D and create a new project.
 
-Open Unity3D and create a new project.
+2. Import the Vuforia package into your project.
 
-Import the Vuforia package into your project.
+3. Set up Vuforia by adding a license key from your Vuforia Developer Account.
 
-Set up Vuforia by adding a license key from your Vuforia Developer Account.
+4. Design your business card in Unity using UI elements and 3D models.
 
-Design your business card in Unity using UI elements and 3D models.
+4. Integrate Vuforia's image target tracking to overlay your business card in AR.
 
-Integrate Vuforia's image target tracking to overlay your business card in AR.
+5. Add interactive elements like buttons for contact information or links to social media.
 
-Add interactive elements like buttons for contact information or links to social media.
-
-Test the AR business card on supported devices.
+6. Test the AR business card on supported devices.
 
 Additional Notes
 
