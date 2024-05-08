@@ -6,7 +6,7 @@ public class InteractableObject : MonoBehaviour
 
     void Start()
     {
-        // Ensure the object has a Rigidbody component for physics interactions
+        // this ensure's the object has a Rigidbody component for physics interactions
         rb = GetComponent<Rigidbody>();
         if (rb == null)
         {
@@ -17,21 +17,21 @@ public class InteractableObject : MonoBehaviour
 
     public void Grab(Transform parent)
     {
-        // Parent the object to the cursor or capsule (or any other parent) when grabbed
+        // this is the parent the object to the cursor or capsule (or any other parent) when grabbed
         transform.SetParent(parent);
-        rb.isKinematic = true; // Make the Rigidbody kinematic to prevent physics from affecting it while held
+        rb.isKinematic = true; // this make's the Rigidbody kinematic to prevent physics from affecting it while held
     }
 
     public void Drop()
     {
-        // Release the object when dropped
+        // this release's the object when dropped
         transform.SetParent(null);
-        rb.isKinematic = false; // Make the Rigidbody non-kinematic to allow physics to affect it again
+        rb.isKinematic = false; // this make's the Rigidbody non-kinematic to allow physics to affect it again
     }
 
     public void Interact()
     {
-        // Define interaction behavior here
+        // this define's interaction behavior here
         Debug.Log("Interacting with object: " + gameObject.name);
     }
 }
