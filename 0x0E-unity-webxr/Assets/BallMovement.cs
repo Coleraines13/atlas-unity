@@ -7,19 +7,19 @@ public class BallMovement : MonoBehaviour
 
     void Update()
     {
-        // Get input for horizontal movement (left and right)
+        // this get's input for horizontal movement (left and right)
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        // Calculate movement direction
+        // calculate's movement direction
         Vector3 moveDirection = Vector3.right * horizontalInput;
 
-        // Calculate next position based on movement direction
+        // calculate's next position based on movement direction
         Vector3 nextPosition = transform.position + moveDirection * speed * Time.deltaTime;
 
-        // Clamp next position within horizontal limits
+        // clamp's the next position within horizontal limits
         nextPosition.x = Mathf.Clamp(nextPosition.x, -horizontalLimit, horizontalLimit);
 
-        // Move the ball
+        // move's the ball
         transform.position = nextPosition;
     }
 }
