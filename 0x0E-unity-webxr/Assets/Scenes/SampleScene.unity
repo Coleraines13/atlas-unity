@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 717068655}
   - component: {fileID: 717068654}
   - component: {fileID: 717068656}
+  - component: {fileID: 717068657}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -598,6 +599,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 2
+--- !u!54 &717068657
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717068648}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &1011699692
 Mesh:
   m_ObjectHideFlags: 0
@@ -17871,12 +17888,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4753155007416889646}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.5, y: -50, z: 3380}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.05049992, y: 0.08000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!136 &2135395575683139779
@@ -20495,6 +20512,7 @@ GameObject:
   - component: {fileID: 1413638611873891210}
   - component: {fileID: 7191695050929750829}
   - component: {fileID: 7819694573445749684}
+  - component: {fileID: 7819694573445749685}
   m_Layer: 0
   m_Name: alley_floor006
   m_TagString: Untagged
@@ -37397,6 +37415,7 @@ GameObject:
   - component: {fileID: 3824055544944691200}
   - component: {fileID: 2761676493374449614}
   - component: {fileID: 2135395575683139779}
+  - component: {fileID: 4753155007416889647}
   m_Layer: 0
   m_Name: bowlingpins1
   m_TagString: pins
@@ -37404,6 +37423,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &4753155007416889647
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753155007416889646}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4753200789372542725
 GameObject:
   m_ObjectHideFlags: 0
@@ -58913,6 +58948,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &7819694573445749685
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470786812606718407}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &7820215541488199641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62926,7 +62977,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8302775848552782874}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &8302775847387146225
 GameObject:
@@ -62940,6 +62991,7 @@ GameObject:
   - component: {fileID: 8302775847387146188}
   - component: {fileID: 8302775847387146189}
   - component: {fileID: 8302775847387146226}
+  - component: {fileID: 8302775847387146227}
   m_Layer: 0
   m_Name: bowlingpins1 (7)
   m_TagString: pins
@@ -62961,6 +63013,22 @@ CapsuleCollider:
   m_Height: 0.09974312
   m_Direction: 2
   m_Center: {x: -0.0005433828, y: 0.00016213358, z: 0.015577543}
+--- !u!54 &8302775847387146227
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775847387146225}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &8302775847521638084
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63037,6 +63105,7 @@ GameObject:
   - component: {fileID: 8302775847521638087}
   - component: {fileID: 8302775847521638084}
   - component: {fileID: 8302775847521638085}
+  - component: {fileID: 8302775847521638092}
   m_Layer: 0
   m_Name: bowlingpins1 (4)
   m_TagString: pins
@@ -63051,14 +63120,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8302775847521638088}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -50, y: -50, z: 3460}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!54 &8302775847521638092
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775847521638088}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!136 &8302775847551832920
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -63136,7 +63221,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8302775848552782874}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &8302775847551832927
 GameObject:
@@ -63150,6 +63235,7 @@ GameObject:
   - component: {fileID: 8302775847551832922}
   - component: {fileID: 8302775847551832923}
   - component: {fileID: 8302775847551832920}
+  - component: {fileID: 8302775847551832928}
   m_Layer: 0
   m_Name: bowlingpins1 (9)
   m_TagString: pins
@@ -63157,6 +63243,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8302775847551832928
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775847551832927}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &8302775847736007924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63233,6 +63335,7 @@ GameObject:
   - component: {fileID: 8302775847736007927}
   - component: {fileID: 8302775847736007924}
   - component: {fileID: 8302775847736007925}
+  - component: {fileID: 8302775847736007932}
   m_Layer: 0
   m_Name: bowlingpins1 (5)
   m_TagString: pins
@@ -63247,14 +63350,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8302775847736007928}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1, y: -50, z: 3460}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04899998, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!54 &8302775847736007932
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775847736007928}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &8302775847902859984
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63318,7 +63437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8302775848552782874}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &8302775847902859989
 GameObject:
@@ -63332,6 +63451,7 @@ GameObject:
   - component: {fileID: 8302775847902859984}
   - component: {fileID: 8302775847902859985}
   - component: {fileID: 8302775847902859990}
+  - component: {fileID: 8302775847902859991}
   m_Layer: 0
   m_Name: bowlingpins1 (8)
   m_TagString: pins
@@ -63353,6 +63473,22 @@ CapsuleCollider:
   m_Height: 0.09974312
   m_Direction: 2
   m_Center: {x: -0.0005433828, y: 0.00016213358, z: 0.015577543}
+--- !u!54 &8302775847902859991
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775847902859989}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &8302775848433787925
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63372,9 +63508,15 @@ Transform:
   m_LocalPosition: {x: 50, y: -50, z: 3460}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2135395575683139777}
+  - {fileID: 8302775848540115017}
+  - {fileID: 8302775848497252832}
+  - {fileID: 8302775848723182608}
+  - {fileID: 8302775847521638091}
+  - {fileID: 8302775847736007931}
   m_Father: {fileID: 8302775848552782874}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &8302775848433787930
 MeshRenderer:
@@ -63444,6 +63586,7 @@ GameObject:
   - component: {fileID: 8302775848433787925}
   - component: {fileID: 8302775848433787930}
   - component: {fileID: 8302775848433787931}
+  - component: {fileID: 8302775848433787935}
   m_Layer: 0
   m_Name: bowlingpins1 (6)
   m_TagString: pins
@@ -63451,6 +63594,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8302775848433787935
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775848433787934}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8302775848497252832
 Transform:
   m_ObjectHideFlags: 0
@@ -63458,12 +63617,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8302775848497252833}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -26, y: -50, z: 3420}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.07600003, y: 0.040000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &8302775848497252833
@@ -63478,6 +63637,7 @@ GameObject:
   - component: {fileID: 8302775848497252860}
   - component: {fileID: 8302775848497252861}
   - component: {fileID: 8302775848497252834}
+  - component: {fileID: 8302775848497252862}
   m_Layer: 0
   m_Name: bowlingpins1 (2)
   m_TagString: pins
@@ -63549,6 +63709,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8302775848497252862
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775848497252833}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &8302775848540115013
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63564,12 +63740,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8302775848540115022}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 20, y: -50, z: 3500}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.029999925, y: -0.040000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &8302775848540115018
@@ -63640,6 +63816,7 @@ GameObject:
   - component: {fileID: 8302775848540115013}
   - component: {fileID: 8302775848540115018}
   - component: {fileID: 8302775848540115019}
+  - component: {fileID: 8302775848540115023}
   m_Layer: 0
   m_Name: bowlingpins1 (1)
   m_TagString: pins
@@ -63647,6 +63824,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8302775848540115023
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775848540115022}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8302775848552782874
 Transform:
   m_ObjectHideFlags: 0
@@ -63659,12 +63852,6 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2135395575683139777}
-  - {fileID: 8302775848540115017}
-  - {fileID: 8302775848497252832}
-  - {fileID: 8302775848723182608}
-  - {fileID: 8302775847521638091}
-  - {fileID: 8302775847736007931}
   - {fileID: 8302775848433787929}
   - {fileID: 8302775847387146224}
   - {fileID: 8302775847902859988}
@@ -63745,12 +63932,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8302775848723182609}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 26, y: -50, z: 3420}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.023999978, y: 0.040000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8302775848552782874}
+  m_Father: {fileID: 8302775848433787929}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &8302775848723182609
@@ -63765,6 +63952,7 @@ GameObject:
   - component: {fileID: 8302775848723182572}
   - component: {fileID: 8302775848723182573}
   - component: {fileID: 8302775848723182610}
+  - component: {fileID: 8302775848723182611}
   m_Layer: 0
   m_Name: bowlingpins1 (3)
   m_TagString: pins
@@ -63786,6 +63974,22 @@ CapsuleCollider:
   m_Height: 0.09974312
   m_Direction: 2
   m_Center: {x: -0.0005433828, y: 0.00016213358, z: 0.015577543}
+--- !u!54 &8302775848723182611
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302775848723182609}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8307588042165447133
 Transform:
   m_ObjectHideFlags: 0

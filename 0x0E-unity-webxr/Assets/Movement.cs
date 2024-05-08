@@ -68,17 +68,31 @@ public class Movement : MonoBehaviour
     }
 
     void DropObject()
+{
+    // Check if there's a grabbed object
+    if (grabbedObject != null)
     {
-        // Check if there's a grabbed object
-        if (grabbedObject != null)
+        // Drop the object
+        InteractableObject interactable = grabbedObject.GetComponent<InteractableObject>();
+        if (interactable != null)
         {
-            // Drop the object
-            InteractableObject interactable = grabbedObject.GetComponent<InteractableObject>();
-            if (interactable != null)
+            interactable.Drop();
+
+            // Calculate the direction to throw the ball (forward relative to the camera)
+            Vector3 throwDirection = cameraTransform.forward;
+
+            // Calculate the throw force based on the distance from the player to the ball
+            float throwForce = Vector3.Distance(grabbedObject.transform.position, transform.position);
+
+            // Apply force to the ball in the calculated direction and with the calculated force
+            Rigidbody rb = grabbedObject.GetComponent<Rigidbody>();
+            if (rb != null)
             {
-                interactable.Drop();
-                grabbedObject = null;
+                rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
             }
+
+            grabbedObject = null;
         }
     }
+}
 }
