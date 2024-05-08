@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class CapsuleMovement : MonoBehaviour
 {
     public float speed = 5.0f; // Movement speed
     public float grabRange = 2.0f; // The range within which objects can be grabbed
